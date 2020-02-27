@@ -6,7 +6,7 @@ import datetime as dt
 def welcome(request):
     return render(request, 'welcome.html')
 
-def projects_of_day(request):
+def projects(request):
     date = dt.date.today()
     return render(request, 'all-projects/today-projects.html',{'date': date})
 
