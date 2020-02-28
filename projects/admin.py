@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Editor,tags
+from .models import projects,description
 # Register your models here.
 
 class ArticleAdmin(admin.ModelAdmin):
-    filter_horizontal =('tags',)
+    filter_horizontal =('description',)
 
-admin.site.register(Editor)
-admin.site.register(tags)  
+admin.site.register(projects)
+admin.site.register(description)  

@@ -11,7 +11,6 @@ def projects(request):
     return render(request, 'all-projects/today-projects.html',{'date': date})
 
 
-
 def past_days_projects(request,past_date):
     
     try:
